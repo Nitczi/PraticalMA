@@ -18,8 +18,14 @@ _"Creates or opens a file or I/O device."_ . Easy, this will basically create a 
 | TemplateFile | NULL | Basically this parameter will set a template of permissions, attributes and other details. In this case, we won't use any model/template.
 
 #### ReadConsole
-_"Reads character input from the console input buffer and removes it from the buffer"._ - This function will be responsibloe for read from the Console Input and store in buffer. Again, the table below explain the values and the parameters:
+_"Reads character input from the console input buffer and removes it from the buffer"._ - This function will be responsible for read from the Console Input and store in buffer. Again, the table below explain the values and the parameters:
 | Parameters | Value | Description |
 | -- | -- | -- |
-| ConsoleInput | hand | A handle from where it will be reading from, in this case, our handle is the Keyboard  
+| ConsoleInput | hand | A handle from where it will be reading from, in this case, our handle is the Keyboard. |
+| Buffer | buf | This is where the data that was readed will be saved. |
+| NumberOfCharsToRead | sizeof(buf) | Simply, this will be the number of chars it will read, in this case will be the size of the `buf` variable. |
+| NumberOfCharsRead | &readed | This will be the value of chars that are actually readed. |
+| InputControl | NULL | This parameter would set a key that, once pressed, the read function would stop. |
 
+#### WriteFile
+_"Writes data to the specified file or input/output (I/O) device."_- As the CreateFile fuc
