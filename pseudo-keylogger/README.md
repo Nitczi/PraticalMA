@@ -28,4 +28,12 @@ _"Reads character input from the console input buffer and removes it from the bu
 | InputControl | NULL | This parameter would set a key that, once pressed, the read function would stop. |
 
 #### WriteFile
-_"Writes data to the specified file or input/output (I/O) device."_- As the CreateFile fuc
+_"Writes data to the specified file or input/output (I/O) device."_- As the meaning of CreateFile fuction, this one is also easy to understand, we will write data to a file, following the model:
+| Parameters | Value | Description |
+| -- | -- | -- |
+| File | file_h | 
+| Buffer |
+| NumberOfBytesToWrite |
+| NumberOfBytesWritten |
+| Overlapped | 
+
